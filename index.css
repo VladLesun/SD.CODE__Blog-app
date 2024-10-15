@@ -123,18 +123,27 @@ button {
 .blog-app__form-btn:active {
 	transform: scale(0.9);
 }
+.blog-app__form-btn:disabled {
+	background-color: gray;
+	transform: scale(1);
+	opacity: 1;
+	cursor: no-drop;
+}
 
 .blog-app__errors {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+	color: #f00;
+}
+.blog-app__errors_hidden {
+	display: none;
 }
 
 .blog-app__error {
 	font-weight: 400;
 	font-size: 25px;
-	color: #f00;
 }
 
 /*todo Правая часть */
